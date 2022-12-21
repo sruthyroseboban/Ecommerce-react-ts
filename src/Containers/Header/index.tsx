@@ -1,6 +1,6 @@
 import React, { Fragment, useContext, useRef } from "react";
 // images and/or icons
-import Logo from "../../Assets/Images/logo.png";
+// import Logo from "../../Assets/Images/logo.png";
 import Menu from "../../Assets/Icons/menu.png";
 import Search from "../../Assets/Icons/search.png";
 import Cart from "../../Assets/Icons/cart.svg";
@@ -64,7 +64,8 @@ export const Header: React.FC<HeaderProps> = ({ dispatch }): JSX.Element => {
             />
           ) : (
             <button className="Header__logo" onClick={() => navigate("/")}>
-              <img src={Logo} alt="" />
+              {/* <img src={Logo} alt="" /> */}
+              <h1 style={{color:'orangered',fontSize:'30px'}}>DEALERZ.</h1>
             </button>
           )}
 
